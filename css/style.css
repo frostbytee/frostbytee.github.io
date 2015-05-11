@@ -8,10 +8,9 @@
 
 /* brandico */
 [class*="brandico-"]:before {
-  font-family: 'brandico', sans-serif;
-  font-size: 200%;
+	font-family: 'brandico', sans-serif;
+	font-size: 200%;
 }
-
 
 * {
     font-family: 'Playfair Display SC', serif;
@@ -22,11 +21,21 @@ body {
 }
 
 hr {
-	border: 1px solid #BDBDBD;
+	border: 1px solid #bdbdbd;
 }
 
 img {
 	border-radius: 10px;
+}
+
+a {
+	color: #1abc9c;
+	font-weight: 600;
+}
+
+h4 {
+	color: #1abc9c;
+	font-weight: 600;
 }
 
 .logo {
@@ -35,10 +44,31 @@ img {
 
 
 .top {
-	background-color: #E0F2F1;
+	background-color: #e0f2f1;
 }
 
-a, h4, .green {
+.green {
 	color: #1abc9c;
 	font-weight: 600;
+}
+
+/* media queries for better font in small screens */
+@media (max-width: 450px) {
+	h1 {
+		font-size: 120%;
+		font-weight: 600;
+	}
+
+	h2 {
+		font-size: 120%;
+		font-weight: 600;
+	}
+
+	h3 {
+		font-size: 110%;
+	}
+
+	.logo {
+		max-width: 40%;
+	}
 }
