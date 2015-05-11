@@ -1,0 +1,44 @@
+/*
+* {
+	border: 1px solid red !important;
+}
+*/
+
+@import url(http://weloveiconfonts.com/api/?family=brandico);
+
+/* brandico */
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+  font-size: 200%;
+}
+
+
+* {
+    font-family: 'Playfair Display SC', serif;
+}
+
+body {
+	background-color: #009688;
+}
+
+hr {
+	border: 1px solid #BDBDBD;
+}
+
+img {
+	border-radius: 10px;
+}
+
+.logo {
+	max-width: 20%;
+}
+
+
+.top {
+	background-color: #E0F2F1;
+}
+
+a, h4, .green {
+	color: #1abc9c;
+	font-weight: 600;
+}
