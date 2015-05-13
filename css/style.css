@@ -56,6 +56,10 @@ dt {
 	font-weight: 600;
 }
 
+.icons {
+	padding-bottom: 10px;
+}
+
 /* media queries for better font in small screens */
 @media (max-width: 450px) {
 	h1 {
