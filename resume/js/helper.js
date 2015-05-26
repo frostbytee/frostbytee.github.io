@@ -36,11 +36,11 @@ var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p><br>%data%</p>';
 
-var HTMLprojectStart = '<div class="project-entry fade"></div>';
-var HTMLprojectTitle = '<a href="#">%data%</a>';
-var HTMLprojectDates = '<div class="date-text">%data%</div>';
-var HTMLprojectDescription = '<p><br>%data%</p>';
-var HTMLprojectImage = '<img src="%data%">';
+var HTMLprojectStart = '<div class="project-entry"></div>';
+var HTMLprojectTitle = '<a class="fade" href="#">%data%</a>';
+var HTMLprojectDates = '<div class="date-text fade">%data%</div>';
+var HTMLprojectDescription = '<p class="fade"><br>%data%</p>';
+var HTMLprojectImage = '<img class="fade" src="%data%">';
 
 var HTMLschoolStart = '<div class="education-entry fade"></div>';
 var HTMLschoolName = '<a href="#">%data%';
@@ -86,6 +86,9 @@ function logClicks(x,y) {
 
 $(document).click(function(loc) {
   // your code goes here!
+  var x = loc.pageX;
+  var y = loc.pageY;
+  logClicks(x,y);
 });
 
 
@@ -188,6 +191,9 @@ function initializeMap() {
     // hmmmm, I wonder what this is about...
     google.maps.event.addListener(marker, 'click', function() {
       // your code goes here!
+      if (infoWindow) {
+        infoWindow.close();
+      }
       infoWindow.open(map, marker);
     });
 
