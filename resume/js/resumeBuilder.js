@@ -102,6 +102,12 @@ var work = {
 
 var projects = {
 	"projects": [
+			{
+		"title": "Classic Arcade Game Clone",
+		"dates": "June 2015",
+		"description": "Built an interactive game using Object-Oriented JavaScript and HTML5 Canvas.",
+		"images": []
+	},
 		{
 		"title": "Online Resume",
 		"dates": "May 2015",
@@ -149,7 +155,7 @@ var education = {
 		{
 		"name": "York University",
 		"location": "Toronto, ON",
-		"degree": "N/A",
+		"degree": "",
 		"majors": ["Chemistry"],
 		"dates": "2011 - 2015",
 		"url": "http://www.yorku.ca/"
@@ -164,6 +170,18 @@ var education = {
 	}
 	],
 	"onlineCourses": [
+	{
+		"title": "Object-Oriented JavaScript",
+		"school": "Udacity",
+		"dates": "June 2015",
+		"url": "https://www.udacity.com/course/viewer#!/c-ud015-nd"
+	},
+	{
+		"title": "HTML5 Canvas",
+		"school": "Udacity",
+		"dates": "June 2015",
+		"url": "https://www.udacity.com/course/viewer#!/c-ud292-nd"
+	},
 	{
 		"title": "Intro to jQuery",
 		"school": "Udacity",
