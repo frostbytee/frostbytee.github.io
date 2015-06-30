@@ -106,7 +106,9 @@ var projects = {
 		"title": "Classic Arcade Game Clone",
 		"dates": "June 2015",
 		"description": "Built an interactive game using Object-Oriented JavaScript and HTML5 Canvas.",
-		"images": []
+		"images": [
+			"images/project3pic1.jpg"
+			]
 	},
 		{
 		"title": "Online Resume",
