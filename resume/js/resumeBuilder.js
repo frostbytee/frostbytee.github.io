@@ -9,8 +9,8 @@ var bio = {
 		"twitter": "@cenkruz",
 		"location": "North York"
 	},
-	"welcomeMessage": "Hello! Welcome to my resume!",
-	"skills": ["HTML5", "CSS3", "Bootstrap", "JS", "Microsoft Office", "Windows", "Linux"],
+	"welcomeMessage": "Hello! I am an aspiring Web developer living in the Greater Toronto Area.  It's my pleasure learning new skills from creating engaging projects that deliver exceptional user experiences.  Feel free to contact me for any inquiries.  Thanks!",
+	"skills": ["HTML5", "CSS3", "Bootstrap", "JS", "jQuery", "Node.js", "Responsive Design"],
 	"biopic": "images/2015pic.jpg",
 	display: function() {
 		var formattedName = HTMLheaderName.replace("%data%", bio.name);
@@ -289,7 +289,7 @@ $(window).on("load",function() {
       if (objectBottom < windowBottom) {
         if ($(this).css('opacity')==0) {$(this).fadeTo(1000,1);}
       } else {
-        if ($(this).css('opacity')==1) {$(this).fadeTo(1000,0);}
+        if ($(this).css('opacity')==1) {$(this).fadeTo(500,0);}
       }
     });
   }
