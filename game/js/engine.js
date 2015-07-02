@@ -104,8 +104,7 @@ var Engine = (function(global) {
                 player.y < allEnemies[enemy].y + 40 &&
                 player.y + 56 > allEnemies[enemy].y ) {
                 console.log("Player is hit!");
-                player.x = 202;
-                player.y = 398;
+                player.spawn();
                 player.score = 0;
                 console.log("Score: " + player.score);
             }
@@ -115,18 +114,14 @@ var Engine = (function(global) {
             player.x + 50 > gem.x &&
             player.y < gem.y + 35 &&
             player.y + 50 > gem.y ) {
-            gem.x = Math.floor(Math.random() * 421) - 8;
-            gem.y = Math.floor(Math.random() * (233 - 68 + 1)) + 68;
-
             player.score += 10;
             console.log("Score: " + player.score);
-            gem = new Gem();
+            gem.spawn();
         }
 
         if (player.y < 0) {
             alert("Game Over! Score: " + player.score);
-            player.x = 202;
-            player.y = 398;
+            player.spawn();
             player.score = 0;
         }
     }
