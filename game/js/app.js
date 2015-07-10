@@ -22,19 +22,19 @@ Enemy.prototype.update = function(dt) {
     if (this.x > 615) {
         this.spawn();
     }
-}
+};
 
 // Creates enemy just outside the left of the screen
 // and randomizes its speed.
 Enemy.prototype.spawn = function() {
     this.x = -100;
     this.speedModifier = Math.floor((Math.random() * 4));
-}
+};
 
 // Draw the enemy on the screen, required method for game
 Enemy.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
-}
+};
 
 // Now write your own player class
 // This class requires an update(), render() and
@@ -50,39 +50,39 @@ var Player = function() {
 Player.prototype.spawn = function() {
     this.x = 202;
     this.y = 398;
-}
+};
 
 // Update the player's position
-Player.prototype.update = function() {}
+Player.prototype.update = function() {};
 // Draw the player on the screen
 Player.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
-}
+};
 
 Player.prototype.handleInput = function(keyCode) {
     // Moves left until player hits a boundary
     if (keyCode == 'left') {
-        if (!(this.x == -8)) {
-            this.x -= 15;
+        if (!(this.x == 0)) {
+            this.x -= 101;
         }
     }
     // Moves right until player hits a boundary
     if (keyCode == 'right') {
-        if (!(this.x == 412)) {
-            this.x += 15;
+        if (!(this.x == 404)) {
+            this.x += 101;
         }
     }
     // Moves up
     if (keyCode == 'up') {
-        this.y -= 15;
+        this.y -= 83;
     }
     // Moves down until player hits a boundary
     if (keyCode == 'down') {
         if (!(this.y == 398)) {
-            this.y += 15;
+            this.y += 83;
         }
     }
-}
+};
 
 // Creates a gem object for the player to collect
 var Gem = function() {
@@ -93,15 +93,15 @@ var Gem = function() {
 Gem.prototype.spawn = function() {
     this.x = Math.floor(Math.random() * 421) - 8;
     this.y = Math.floor(Math.random() * 166) + 68;
-}
+};
 
 // Update the gem's position
-Gem.prototype.update = function() {}
+Gem.prototype.update = function() {};
 
 // Draws the gem on the screen
 Gem.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
-}
+};
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
