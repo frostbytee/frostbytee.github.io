@@ -91,8 +91,8 @@ var Gem = function() {
 
 // The gem spawns only within the stone block tiles
 Gem.prototype.spawn = function() {
-    this.x = Math.floor(Math.random() * 421) - 8;
-    this.y = Math.floor(Math.random() * 166) + 68;
+    this.x = Math.floor(Math.random() * 5) * 101;
+    this.y = (Math.floor(Math.random() * 3) * 83) + 66;
 };
 
 // Update the gem's position
