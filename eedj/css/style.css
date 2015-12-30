@@ -18,16 +18,20 @@ nav {
 
 .navbar {
     margin-bottom: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
 .fixed {
     position: fixed;
-    top: 0; left: 0; right: 0;
+    top: 0;
     z-index: 1;
 }
 
 .icons {
     font-size: 175%;
+    margin-top: 50px;
 }
 .nav>li {
     padding: 0 5px;
