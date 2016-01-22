@@ -5,12 +5,21 @@ html {
 }
 
 body {
+    overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
-    background-color: #1c1314;
+    /*background-color: #1c1314;*/
+    background-image: url(../images/background2.jpg);
+    background-repeat: repeat;
+}
+
+@media (min-width: 1600px) {
+    .container-fluid, .navbar {
+        width: 1600px;
+    }
 }
 
 img#logoTitle {
-    width: 25%;
+    width: 37%;
 }
 
 /* Navigation */
@@ -18,23 +27,48 @@ nav {
     display: none;
     font-family: 'Open Sans Condensed', sans-serif;
     color: #39AB3D;
-    font-size: 15px;
+    background-color: #1c1314;
+    font-size: 1.13em;
 }
 
-.navContainer {
-    padding-left: 10%;
-    padding-right: 10%;
+@media (max-width: 790px) {
+    .navContainer {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
+
+
+@media (min-width: 947px) {
+    .navContainer {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media (min-width: 1300px) {
+    .navContainer {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+
+
 
 .navbar {
     min-height: 0px;
     margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0;
     left: 0;
     right: 0;
 }
 
 .navbar-nav {
     float: none;
+    margin: 0;
 }
 
 .nav>li {
@@ -43,7 +77,19 @@ nav {
     padding: 0 5px;
     width: 20%;
     justify-content: center;
-    display: flex;
+    display: flex;   
+}
+
+.nav>li:hover {
+    background-color: #bbb;
+}
+
+.nav>li>a {
+    color: green;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+    background-color: transparent;
 }
 
 @media (max-width: 764px) {
@@ -64,8 +110,7 @@ ul {
 
 
 .content {
-    background-image: url(../images/background2.jpg);
-    background-repeat: repeat;
+    
 }
 
 .owl-wrapper-outer {
@@ -98,6 +143,10 @@ h1 {
     font-size: 350%;
 }
 
+a {
+    color: green;
+}
+
 a.fa {
     color: green;
     float: right;
@@ -107,7 +156,7 @@ a.fa {
     color: #39AB3D;
     font-family: 'Bree Serif', serif;
 	background-color: #1c1314;
-    padding: 10px;
+    padding: 10px 10px 0 10px;
     /*
 	border-bottom-right-radius: 2em;
 	border-bottom-left-radius: 2em;
@@ -130,7 +179,7 @@ hr {
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
     .less {
         display: none;
     }
@@ -261,21 +310,29 @@ button.list-group-item:hover {
 
 .motto {
     font-weight: 700;
-    font-size: 130%;
+    font-size: 1.25em;
     font-family: 'Quicksand', sans-serif;
 }
+
+@media (min-width: 900px) {
+    .motto {
+        font-size: 1.75em;
+    }
+}
+
 
 .footer {
   bottom: 0px;
   width: 100%;
   /* Set the fixed height of the footer here */
+  position: absolute;
   height: 60px;
   background-color: #1c1314;
   color: green;
 }
 
 .last {
-    margin-bottom: 10px;
+    margin-bottom: 70px;
 }
 
 .foot {
@@ -304,6 +361,7 @@ button.list-group-item:hover {
 /* Desktop */
 
 
+
 .aboutDesktop {
     display: none;
     background-color: #fff7e5;
@@ -312,6 +370,7 @@ button.list-group-item:hover {
     margin-bottom: 20px;
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 15px;
     box-shadow: 0px 3px 20px;
 }
 
@@ -337,8 +396,10 @@ button.list-group-item:hover {
     background-color: #fff7e5;
     margin-right: 10%;
     margin-left: 10%;
+    margin-bottom: 6em;
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 3em;
     box-shadow: 0px 3px 20px;
 }
 
@@ -352,7 +413,7 @@ h3.headingUnderline {
 
 }
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
     .aboutDesktop {
         display: block;
     }
@@ -363,4 +424,133 @@ h3.headingUnderline {
     .menuDesktop {
         display: block;
     }
+}
+
+
+
+/* Menu items */
+
+table {
+    width: auto;
+    float: right;
+}
+
+tbody {
+    float: right;
+}
+
+tr {
+    text-align: center;
+}
+
+td {
+    padding-right: 10px;
+    width: 50px;
+    font-size: 1.25em;
+}
+
+td.last {
+    padding-right: 0;
+}
+
+td.options {
+    font-size: 0.75em;
+    font-weight: bold;
+}
+/* TOOLTIPS */
+a[data-tooltip] {
+  position: relative;
+}
+a[data-tooltip]::before,
+a[data-tooltip]::after {
+  position: absolute;
+  display: none;
+  opacity: 0.85;
+}
+a[data-tooltip]::before {
+  /*
+   * using data-tooltip instead of title so we 
+   * don't have the real tooltip overlapping
+   */
+  content: attr(data-tooltip);
+  background: #000;
+  color: #fff;
+  font-size: 13px;
+  padding: 5px;
+  border-radius: 5px;
+  /* we don't want the text to wrap */
+  white-space: normal;
+  width: 300px;
+  text-decoration: none;
+}
+a[data-tooltip]::after {
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  content: '';
+}
+
+a[data-tooltip]:hover::before,
+a[data-tooltip]:hover::after {
+  display: block;
+}
+
+/** positioning **/
+
+/* left tooltip */
+a[data-tooltip][data-placement="left"]::before {
+  top: -25%;
+  right: 100%;
+  margin-right: 10px;
+}
+a[data-tooltip][data-placement="left"]::after {
+  border-left-color: #000;
+  border-right: none;
+  top: 50%;
+  right: 100%;
+  margin-top: -6px;
+  margin-right: 4px;
+}
+
+/* right tooltip */
+a[data-tooltip][data-placement="right"]::before {
+  top: -25%;
+  left: 100%;
+  margin-left: 10px;
+}
+a[data-tooltip][data-placement="right"]::after {
+  border-right-color: #000;
+  border-left: none;
+  top: 50%;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: 4px;
+}
+
+/* top tooltip */
+a[data-tooltip][data-placement="top"]::before {
+  bottom: 100%;
+  left: 0;
+  margin-bottom: 10px;
+}
+a[data-tooltip][data-placement="top"]::after {
+  border-top-color: #000;
+  border-bottom: none;
+  bottom: 100%;
+  left: 10px;
+  margin-bottom: 4px;
+}
+
+/* bottom tooltip */
+a[data-tooltip][data-placement="bottom"]::before {
+  top: 100%;
+  left: 0;
+  margin-top: 10px;
+}
+a[data-tooltip][data-placement="bottom"]::after {
+  border-bottom-color: #000;
+  border-top: none;
+  top: 100%;
+  left: 10px;
+  margin-top: 4px;
 }

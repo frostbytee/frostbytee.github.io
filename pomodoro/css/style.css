@@ -1,0 +1,37 @@
+@media (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+} 
+
+* {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.circle {
+  margin-top: 10px;
+  border: 3px solid;
+  position: relative;
+  display: inline-block;
+  height: 320px;
+  border-radius: 50%;
+}
+
+.state {
+  padding-top:20px;
+  font-size: 200%;
+}
+
+.time {
+  padding: 25% 0 20%;
+  font-size: 300%;
+}
+
+.icon {
+  font-size: 250%;
+}
+
+.options {
+  margin-top: 20px;
+  font-size: 150%;
+}
