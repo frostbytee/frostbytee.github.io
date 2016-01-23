@@ -134,6 +134,11 @@ ul {
     text-transform: uppercase
 }
 
+.call {
+    background: url(../images/call.png);
+    width: 215px;
+}
+
 .hidden {
 	display: none;
 }
@@ -161,6 +166,12 @@ a.fa {
 	border-bottom-right-radius: 2em;
 	border-bottom-left-radius: 2em;
     */
+}
+
+.content-text {
+  font-size: 1.15em;
+  padding: 0.5em;
+  border-radius: 0.5em;
 }
 
 hr {

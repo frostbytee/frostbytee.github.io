@@ -25,6 +25,7 @@
     <!--<script src="js/bootstrap.min.js"></script>-->
 	<script src="owl-carousel/owl.carousel.min.js"></script>
     <!-- <script async src="js/script.js"></script> -->
+    <script src="https://www.foodbooking.com/widget/js/ewm2.js" defer async ></script>
 </head>
 
 <body>
@@ -45,11 +46,11 @@
 	<nav id="navigation" class="navbar">
 		<div class="container-fluid navContainer">
 			<ul class="nav navbar-nav">
-			    <li class="hvr-underline-from-center"><a href="#aboutDesktop">About</a></li>
 			    <li class="hvr-underline-from-center"><a href="#locationDesktop">Locations</a></li>
 			    <li class="hvr-underline-from-center"><a href="#menuDesktop">Menu</a></li>
+			    <li class="hvr-underline-from-center"><a href="#aboutDesktop">About Us</a></li>
 			    <li class="hvr-underline-from-center"><a href="#orderDesktop">Order Online</a></li>
-			    <li class="hvr-underline-from-center"><a href="#contactDesktop">Contact</a></li>
+			    <li class="hvr-underline-from-center"><a href="#franchisingDesktop">Franchising</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -96,18 +97,18 @@
 
 				<div class="list-group location" style="display: none">
 					<button id="oakville" type="button" class="list-group-item mobileBtn">Oakville</button>
-					<div class="oakville" style="display: none">
-						<p>2335 Trafalgar Road, Oakville, ON L6H 6N9</p>
-						<p>(289) 725-9000</p>
+					<div class="oakville text-center" style="display: none">
+						<p><a href="http://maps.google.com/?q=2335%20Trafalgar%20Road,%20Oakville,%20ON%20L6H%206N9">2335 Trafalgar Road, Oakville, ON L6H 6N9</a></p>
+						<a class="btn btn-success call" href="tel:12897259000">Call Now (289) 725-9000</a>
 						<img class="img-responsive" src="images/oakvillestore.jpg">
-						<img class="img-responsive" src="https://maps.googleapis.com/maps/api/staticmap?center=2335%20Trafalgar%20Road&amp;zoom=16&amp;size=300x200&amp;scale=1.75&amp;markers=red%7C43.4834108,-79.712961&amp;key=AIzaSyClWIHG25LLDXl9T37KKxcaPF26sUni6dc" alt="Map">
+						<a href="http://maps.google.com/?q=2335%20Trafalgar%20Road,%20Oakville,%20ON%20L6H%206N9"><img class="img-responsive" src="https://maps.googleapis.com/maps/api/staticmap?center=2335%20Trafalgar%20Road&amp;zoom=16&amp;size=300x200&amp;scale=1.75&amp;markers=red%7C43.4834108,-79.712961&amp;key=AIzaSyClWIHG25LLDXl9T37KKxcaPF26sUni6dc" alt="Map"></a>
 					</div>
 					<button id="burlington" type="button" class="list-group-item mobileBtn">Burlington</button>
-					<div class="burlington" style="display: none">
-						<p>	480 Brant St, Burlington, ON L7R 2G4</p>
-						<p>(289) 245-1010</p>
+					<div class="burlington text-center" style="display: none">
+						<p>	<a href="http://maps.google.com/?q=48%20Brant%20St,%20Burlington,%20ON%20L7R%202G4">480 Brant St, Burlington, ON L7R 2G4</a></p>
+						<a class="btn btn-success call" href="tel:12892451010">Call Now (289) 245-1010</a>
 						<img class="img-responsive" src="images/burlingtonstore.jpg">
-						<img class="img-responsive" src="https://maps.googleapis.com/maps/api/staticmap?center=480%20Brant%20Street%20Burlington&amp;zoom=16&amp;size=300x200&amp;scale=1.75&amp;markers=red%7C43.327101,-79.8002722&amp;key=AIzaSyClWIHG25LLDXl9T37KKxcaPF26sUni6dc" alt="Map">
+						<a href="http://maps.google.com/?q=48%20Brant%20St,%20Burlington,%20ON%20L7R%202G4"><img class="img-responsive" src="https://maps.googleapis.com/maps/api/staticmap?center=480%20Brant%20Street%20Burlington&amp;zoom=16&amp;size=300x200&amp;scale=1.75&amp;markers=red%7C43.327101,-79.8002722&amp;key=AIzaSyClWIHG25LLDXl9T37KKxcaPF26sUni6dc" alt="Map"></a>
 					</div>
 				</div>
 			</div>
@@ -986,7 +987,7 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<button id="about" class="btn less center-block mobileBtn">About Us</button>
-				<div class="about" style="display: none">
+				<div class="about list-group content-text" style="display: none">
 					We use only the freshest ingredients to marinate our meat, giving it an unprecedented taste and flavour. These tastes, blended with fresh cut vegetables, sour cream, homemade guacamole, burrito sauce and hot sauce will always leave you wanting more. Burrito Masters receives daily deliveries of fresh meat and produce, meaning our staff will always serve you  the best, freshest Mexican burritos.
 				</div>
 			</div>
@@ -994,9 +995,9 @@
 
 		<div class="row">
 			<div class="col-xs-12">
-				<button id="orderOnline" class="btn less center-block">Order Online</button>
-				<div class="orderOnline mobileBtn" style="display: none">
-					Coming Soon
+				<button id="orderOnline" class="btn less center-block mobileBtn">Order Online</button>
+				<div class="orderOnline text-center" style="display: none">
+					<span class="glf-button" data-glf-cuid="beb33307-7fb8-46aa-a1dd-1ea4c22075fb" data-glf-ruid="24601d40-8d6d-4fdf-9135-b1ebab2d041f" data-glf-auto-open="false"> Order Now!</span> 
 				</div>
 			</div>
 		</div>
@@ -1004,8 +1005,8 @@
 		<div class="row last">
 			<div class="col-xs-12">
 				<button id="franchising" class="btn less center-block mobileBtn">Franchising</button>
-				<div class="franchising mobileBtn" style="display: none">
-					<p>Are you looking for entrepreneurial and rising business opportunity? Are you passionate about food and want to make a career? Burrito Masters is looking for the right people to join OUR team! Please contact our Franchise Department at franchise@burritomasters.ca</p>
+				<div class="franchising list-group content-text" style="display: none">
+					<p>Are you looking for entrepreneurial and rising business opportunity? Are you passionate about food and want to make a career? Burrito Masters is looking for the right people to join OUR team! Please contact our Franchise Department at <a href="mailto:franchise@burritomasters.ca?subject=Franchise%20inquiry">franchise@burritomasters.ca</a></p>
 				</div>
 			</div>
 		</div>
