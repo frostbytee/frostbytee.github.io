@@ -565,9 +565,3 @@ a[data-tooltip][data-placement="bottom"]::after {
   left: 10px;
   margin-top: 4px;
 }
-
-/* Order Online */
-
-span.orderbutton {
-  width: 220px;
-}

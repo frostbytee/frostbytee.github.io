@@ -10,7 +10,7 @@ var bio = {
 		"location": "North York"
 	},
 	"welcomeMessage": "Hello! I am an aspiring Web developer living in the Greater Toronto Area.  It's my pleasure learning new skills from creating engaging projects that deliver exceptional user experiences.  Feel free to contact me for any inquiries.  Thanks!",
-	"skills": ["HTML5", "CSS3", "Bootstrap", "JS", "jQuery", "Node.js", "Responsive Design"],
+	"skills": ["HTML5", "CSS3", "Bootstrap", "JS", "jQuery", "Node.js", "React.js", "Git", "Gulp", "Responsive Design"],
 	"biopic": "images/2015pic.jpg",
 	display: function() {
 		var formattedName = HTMLheaderName.replace("%data%", bio.name);
@@ -59,6 +59,13 @@ var work = {
 	"jobs": [
 	{
 		"employer": "TJX Canada",
+		"title": "Store Investigator",
+		"location": "Toronto, ON",
+		"dates": "Jul 2015 - Present",
+		"description": "Detecting and apprehending retail theft"
+	},
+	{
+		"employer": "TJX Canada",
 		"title": "Customer Service Agent",
 		"location": "Toronto, ON",
 		"dates": "Oct 2013 - Present",
@@ -102,8 +109,64 @@ var work = {
 
 var projects = {
 	"projects": [
+	{
+		"title": "<a href='http://cruzken.github.io/bm'>Burrito Masters</a>",
+		"dates": "February 2016",
+		"description": "Client requested site development and online ordering system alternative.  Work in progress.  Deployment at February 4, 2016",
+		"images": [
+			"http://cruzken.github.io/images/codepenportfolio/bm.jpg"
+		]
+	},
+	{
+		"title": "<a href='http://codepen.io/cruzken/full/dGJxvy'>Weather Forecast</a>",
+		"dates": "January 2016",
+		"description": "Shows weather and forecast for rest of the week. Uses openweather API and google street view image API.  Allow device location for this one!",
+		"images": [
+			"http://cruzken.github.io/images/codepenportfolio/weather.jpg"
+		]
+	},
+	{
+		"title": "<a href='http://codepen.io/cruzken/full/yeYayL'>Basic Calculator</a>",
+		"dates": "December 2015",
+		"description": "Just a calculator made with JS and jQuery",
+		"images": [
+			"http://cruzken.github.io/images/codepenportfolio/calculator.jpg"
+		]
+	},
+	{
+		"title": "<a href='http://codepen.io/cruzken/full/epojGQ/'>Pomodoro Clock</a>",
+		"dates": "November 2015",
+		"description": "Creating a pomodoro clock with JS and jQuery. Now with mood color transitions!",
+		"images": [
+			"http://cruzken.github.io/images/codepenportfolio/pomodoro.jpg"
+		]
+	},
+	{
+		"title": "<a href='http://codepen.io/cruzken/full/GpeZNR/'>Random Quote Generator</a>",
+		"dates": "November 2015",
+		"description": "Generates random quotes that are tweetable with JS and jQuery",
+		"images": [
+			"http://cruzken.github.io/images/codepenportfolio/randomquotegen.jpg"
+		]
+	},
+	{
+		"title": "<a href='http://codepen.io/cruzken/full/epPoaQ/'>Portfolio 2</a>",
+		"dates": "November 2015",
+		"description": "Second portfolio using HTML5, CSS3, and JS",
+		"images": [
+			"http://cruzken.github.io/images/codepenportfolio/portfolio2.jpg"
+		]
+	},
+	{
+		"title": "<a href='https://github.com/cruzken/FEND0415-P4'>Website optimization</a>",
+		"dates": "July 2015",
+		"description": "Optimized a low performing website with compression, inlining, and asynchronous techniques.",
+		"images": [
+			"http://cruzken.github.io/images/codepenportfolio/wpo.jpg"
+		]
+	},
 			{
-		"title": "Classic Arcade Game Clone",
+		"title": "<a href='http://cruzken.github.io/game'>Classic Arcade Game Clone</a>",
 		"dates": "June 2015",
 		"description": "Built an interactive game using Object-Oriented JavaScript and HTML5 Canvas.",
 		"images": [
@@ -111,7 +174,7 @@ var projects = {
 			]
 	},
 		{
-		"title": "Online Resume",
+		"title": "<a href='http://cruzken.github.io/resume'>Online Resume</a>",
 		"dates": "May 2015",
 		"description": "Built an interactive website using JavaScript and jQuery displaying my resume.",
 		"images": [
@@ -120,7 +183,7 @@ var projects = {
 			]
 	},
 	{
-		"title": "Build a Portfolio Site",
+		"title": "<a href='http://cruzken.github.io/'>Build a Portfolio Site</a>",
 		"dates": "April 2015",
 		"description": "Developed a responsive website that will display images, descriptions and links to each of the portfolio projects that will be completed throughout the course of the Front-End Web Developer Nanodegree.",
 		"images": [
@@ -278,14 +341,16 @@ $("#mapDiv").append(googleMap);
 
 // fading elements functionality
 
+
+/*
 $(window).on("load",function() {
   function fade() {
     $('.fade').each(function() {
-      /* Check the location of each desired element */
+      // Check the location of each desired element 
       var objectBottom = $(this).offset().top + $(this).outerHeight();
       var windowBottom = $(window).scrollTop() + $(window).innerHeight();
 
-      /* If the object is completely visible in the window, fade it in */
+      // If the object is completely visible in the window, fade it in 
       if (objectBottom < windowBottom) {
         if ($(this).css('opacity')==0) {$(this).fadeTo(1000,1);}
       } else {
@@ -296,3 +361,4 @@ $(window).on("load",function() {
   fade(); //Fade in completely visible elements during page-load
   $(window).scroll(function() {fade();}); //Fade in elements during scroll
 });
+*/

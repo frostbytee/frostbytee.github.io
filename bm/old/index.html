@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Restaurant</title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!--<link href="css/hover.css" rel="stylesheet">-->
+    <link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet' type='text/css'>
+	<!-- Basic stylesheet -->
+	<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+	 
+	 <!-- Default Theme -->
+	<link rel="stylesheet" href="owl-carousel/owl.theme.css">
+	 
+	<!-- Include js plugin -->
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <!--<script src="js/bootstrap.min.js"></script>-->
+	<script src="owl-carousel/owl.carousel.min.js"></script>
+    <!-- <script async src="js/script.js"></script> -->
+    <script src="https://www.foodbooking.com/widget/js/ewm2.js" defer async ></script>
+</head>
+
+<body>
+	<div class="container-fluid">
+
+		<div class="row text-center">
+			<div class="col-xs-12 headline">
+				<a class="fa"><i class="fa fa-facebook-square"></i></a>
+				<img id="logoTitle" class="logoTitle" src="images/fulllogoBurritomin.png">
+				<img id="logo" class="imageRotateHorizontal" src="images/fulllogoheadmin.png">
+				<img id="logoTitle" class="logoTitle" src="images/fulllogoMastersmin.png">
+				<br>
+				<span class="motto">fresh mexican burritos</span>
+			</div>
+		</div>
+	</div>
+
+	<nav id="navigation" class="navbar">
+		<div class="container-fluid navContainer">
+			<ul class="nav navbar-nav">
+			    <li class="hvr-underline-from-center"><a href="#locationDesktop">Locations</a></li>
+			    <li class="hvr-underline-from-center"><a href="#menuDesktop">Menu</a></li>
+			    <li class="hvr-underline-from-center"><a href="#aboutDesktop">About Us</a></li>
+			    <li class="hvr-underline-from-center"><a href="#orderDesktop">Order Online</a></li>
+			    <li class="hvr-underline-from-center"><a href="#franchisingDesktop">Franchising</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container-fluid content">
+		<div class="row">
+			<div class="owl-carousel">
+			  <!--<div class="item"><img src="images/onehalf.jpg"></div>
+			  <div class="item"><img src="images/twohalf.jpg"></div>
+			  <div class="item"><img src="images/threehalf.jpg"></div>-->
+			</div>		
+		</div>
+
+		<div class="row"> 
+			<div class="col-xs-12">
+				<div id="aboutDesktop" class="aboutDesktop">
+					<div class="desktopHeadline text-center"><h2>About Us</h2></div>
+					<p>We use only the freshest ingredients to marinate our meat, giving it an unprecedented taste and flavour. These tastes, blended with fresh cut vegetables, sour cream, homemade guacamole, burrito sauce and hot sauce will always leave you wanting more. Burrito Masters receives daily deliveries of fresh meat and produce, meaning our staff will always serve you  the best, freshest Mexican burritos.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12">
+				<button id="location" class="btn less center-block mobileBtn">Locations</button>
+
+				<div id="locationDesktop" class="locationDesktop">
+					<div class="desktopHeadline text-center"><h2>Locations</h2>Two great locations to serve you!</div>
+					<div class="locationD text-center">
+						<p>Burlington</p>
+						<p>	480 Brant St<br>Burlington,ON<br>L7R 2G4</p>
+						<p><i class="fa fa-phone"></i>(289) 245-1010</p>
+						<img class="img-responsive imgDesktop" src="images/burlingtonstoreDesktop.jpg">
+						<img class="img-responsive imgDesktop" src="https://maps.googleapis.com/maps/api/staticmap?center=480%20Brant%20Street%20Burlington&amp;zoom=16&amp;size=400x200&amp;scale=1.75&amp;markers=red%7C43.327101,-79.8002722&amp;key=AIzaSyClWIHG25LLDXl9T37KKxcaPF26sUni6dc" alt="Map">
+					</div>
+					<div class="locationD text-center">
+						<p>Oakville</p>
+						<p>2335 Trafalgar Road<br>Oakville, ON<br>L6H 6N9</p>
+						<p><i class="fa fa-phone"></i>(289) 725-9000</p>
+						<img class="img-responsive imgDesktop" src="images/oakvillestoreDesktop.jpg">
+						<img class="img-responsive imgDesktop" src="https://maps.googleapis.com/maps/api/staticmap?center=2335%20Trafalgar%20Road&amp;zoom=16&amp;size=400x200&amp;scale=1.75&amp;markers=red%7C43.4834108,-79.712961&amp;key=AIzaSyClWIHG25LLDXl9T37KKxcaPF26sUni6dc" alt="Map">
+					</div>
+				</div>
+
+				<div class="list-group location" style="display: none">
+					<button id="oakville" type="button" class="list-group-item mobileBtn">Oakville</button>
+					<div class="oakville text-center" style="display: none">
+						<p><a href="http://maps.google.com/?q=2335%20Trafalgar%20Road,%20Oakville,%20ON%20L6H%206N9">2335 Trafalgar Road, Oakville, ON L6H 6N9</a></p>
+						<a class="btn btn-success call" href="tel:12897259000">Call Now (289) 725-9000</a>
+						<img class="img-responsive" src="images/oakvillestore.jpg">
+						<a href="http://maps.google.com/?q=2335%20Trafalgar%20Road,%20Oakville,%20ON%20L6H%206N9"><img class="img-responsive" src="https://maps.googleapis.com/maps/api/staticmap?center=2335%20Trafalgar%20Road&amp;zoom=16&amp;size=300x200&amp;scale=1.75&amp;markers=red%7C43.4834108,-79.712961&amp;key=AIzaSyClWIHG25LLDXl9T37KKxcaPF26sUni6dc" alt="Map"></a>
+					</div>
+					<button id="burlington" type="button" class="list-group-item mobileBtn">Burlington</button>
+					<div class="burlington text-center" style="display: none">
+						<p>	<a href="http://maps.google.com/?q=48%20Brant%20St,%20Burlington,%20ON%20L7R%202G4">480 Brant St, Burlington, ON L7R 2G4</a></p>
+						<a class="btn btn-success call" href="tel:12892451010">Call Now (289) 245-1010</a>
+						<img class="img-responsive" src="images/burlingtonstore.jpg">
+						<a href="http://maps.google.com/?q=48%20Brant%20St,%20Burlington,%20ON%20L7R%202G4"><img class="img-responsive" src="https://maps.googleapis.com/maps/api/staticmap?center=480%20Brant%20Street%20Burlington&amp;zoom=16&amp;size=300x200&amp;scale=1.75&amp;markers=red%7C43.327101,-79.8002722&amp;key=AIzaSyClWIHG25LLDXl9T37KKxcaPF26sUni6dc" alt="Map"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+		<div class="row">
+			<div class="col-xs-12">
+				<button id="menu" class="btn less center-block mobileBtn">Menu</button>
+
+				<div id="menuDesktop" class="menuDesktop">
+					<div class="desktopHeadline text-center"><h2>Menu</h2></div>
+
+					<div class="burritosD" style="">
+						<h3 class="headingUnderline">Burritos</h3>
+						<p>Order any burrito on a regular or whole wheat tortilla, or Naked (bowl). Make your burrito a meal by adding fries or tortilla chips and a pop for only $2.99. <br><a href="#" onclick="return false;" data-tooltip="Refried beans, rice, cheese, lettuce, tomatoes, red & green peppers, jalapeños, corn, black beans, red onions, cilantro, fresh guacamole, salsa, sour cream, homemade burrito sauce and hot sauce." data-placement="bottom">Available toppings</a></p>
+
+						<div class="menulist">
+							<p class="topping">Steak</p> 
+							<table>
+								<tr>
+							    	<td>7.52</td>
+							    	<td class="last">8.72</td>
+							  	</tr>
+							  	<tr>
+							    	<td class="options">small</td>
+							    	<td class="options last">large</td>
+							  	</tr>
+							</table>
+						</div>
+
+						<div class="menulist">
+							<p class="topping">Chicken</p>
+							<table>
+								<tr>
+							    	<td>6.86</td>
+							    	<td class="last">8.19</td>
+							  	</tr>
+							  	<tr>
+							    	<td class="options">small</td>
+							    	<td class="options last">large</td>
+							  	</tr>
+							</table>
+						</div>
+
+						<div class="menulist">
+							<p class="topping">Veggie Soy</p>
+							<table>
+								<tr>
+							    	<td>6.64</td>
+							    	<td class="last">7.97</td>
+							  	</tr>
+							  	<tr>
+							    	<td class="options">small</td>
+							    	<td class="options last">large</td>
+							  	</tr>
+							</table>
+						</div>
+
+						<div class="menulist">
+							<p class="topping">Shrimp</p>
+							<table>
+								<tr>
+							    	<td>6.64</td>
+							    	<td class="last">7.97</td>
+							  	</tr>
+							  	<tr>
+							    	<td class="options">small</td>
+							    	<td class="options last">large</td>
+							  	</tr>
+							</table>
+						</div>
+
+						<div class="menulist">
+							<p class="topping">Halibut</p>
+							<table>
+								<tr>
+							    	<td>6.64</td>
+							    	<td class="last">7.97</td>
+							  	</tr>
+							  	<tr>
+							    	<td class="options">small</td>
+							    	<td class="options last">large</td>
+							  	</tr>
+							</table>
+						</div>
+
+						<div class="menulist">
+							<p class="topping">Steak & Chicken</p>
+							<table>
+								<tr>
+							    	<td>7.52</td>
+							    	<td class="last">8.72</td>
+							  	</tr>
+							  	<tr>
+							    	<td class="options">small</td>
+							    	<td class="options last">large</td>
+							  	</tr>
+							</table>
+						</div>
+
+						<div class="menulist">
+							<p class="topping">Shrimp Mix</p>
+							<table>
+								<tr>
+							    	<td>8.19</td>
+							    	<td class="last">9.07</td>
+							  	</tr>
+							  	<tr>
+							    	<td class="options">small</td>
+							    	<td class="options last">large</td>
+							  	</tr>
+							</table>
+						</div>
+
+						<div class="menulist">
+							<p class="topping">Halibut Mix</p>
+							<table>
+								<tr>
+							    	<td>9.73</td>
+							    	<td class="last">10.61</td>
+							  	</tr>
+							  	<tr>
+							    	<td class="options">small</td>
+							    	<td class="options last">large</td>
+							  	</tr>
+							</table>
+						</div>
+					</div>
+
+					<div class="quesadillasD" style="">
+						<h3 class="headingUnderline">Quesadillas</h3>
+						<p>Served with burrito sauce and salsa. Choice of quesadilla toppings: Cheese, tomatoes, red & green peppers, jalapeños, corn, black beans, red onion and cilantro.</p>
+
+						<div class="menulist">
+							<p class="topping">Steak</p>
+							<table>
+								<tr>
+							    	<td class="last">8.19</td>
+							  	</tr>
+							</table>
+						</div>
+
+						<div class="menulist">
+							<p class="topping">Chicken</p> 
+							<table>
+								<tr>
+							    	<td class="last">7.52</td>
+							  	</tr>
+							</table>
+						</div>
+
+						<div class="menulist">
+							<p class="topping">Steak & Chicken</p>
+							<table>
+								<tr>
+							    	<td class="last">8.19</td>
+							  	</tr>
+							</table>
+						</div>
+
+						<div class="menulist">
+							<p class="topping">Veggie Soy</p> 
+							<table>
+								<tr>
+							    	<td class="last">7.30</td>
+							  	</tr>
+							</table>
+						</div>
+
+						<div class="menulist">
+							<p class="topping">Cheese</p> 
+							<table>
+								<tr>
+							    	<td class="last">5.97</td>
+							  	</tr>
+							</table>
+						</div>
+
+						<div class="menulist">
+							<p class="topping">Shrimp</p> 
+							<table>
+								<tr>
+							    	<td class="last">8.63</td>
+							  	</tr>
+							</table>
+						</div>
+
+						<div class="menulist">
+							<p class="topping">Shrimp Mix</p> 
+							<table>
+								<tr>
+							    	<td class="last">8.63</td>
+							  	</tr>
+							</table>
+						</div>
+					</div>
+
+					<div class="tacosD" style="">
+						<h3 class="headingUnderline">Tacos</h3>
+						<p>Choose from hard, soft or GLUTEN-FREE hard taco shells. Available taco toppings: Lettuce, cheese, tomato, red onions, jalapeño, cilantro, salsa, sour cream, homemade hot sauce. Add guacamole for $0.99</p>
+
+						<div class="menulist">
+							<p class="topping">Steak</p> 
+
+							<table>
+								<tr>
+							    	<td>3.76</td>
+							    	<td class="last">6.69</td>
+							  	</tr>
+							  	<tr>
+							    	<td class="options">one</td>
+							    	<td class="options last">two</td>
+							  	</tr>
+							</table>
+						</div>
+
+						<div class="menulist">
+							<p class="topping">Chicken</p> 
+							<table>
+								<tr>
+							    	<td>3.76</td>
+							    	<td class="last">6.42</td>
+							  	</tr>
+							  	<tr>
+							    	<td class="options">one</td>
+							    	<td class="options last">two</td>
+							  	</tr>
+							</table>
+						</div>
+
+						<div class="menulist">
+							<p class="topping">Veggie Soy</p> 
+							<table>
+								<tr>
+							    	<td>3.76</td>
+							    	<td class="last">6.42</td>
+							  	</tr>
+							  	<tr>
+							    	<td class="options">one</td>
+							    	<td class="options last">two</td>
+							  	</tr>
+							</table>
+						</div>
+
+						<div class="menulist">
+							<p class="topping">Bean & Cheese</p> 
+							<table>
+								<tr>
+							    	<td>2.74</td>
+							    	<td class="last">5.22</td>
+							  	</tr>
+							  	<tr>
+							    	<td class="options">one</td>
+							    	<td class="options last">two</td>
+							  	</tr>
+							</table>
+						</div>
+
+						<div class="menulist">
+							<p class="topping">Shrimp</p> 
+							<table>
+								<tr>
+							    	<td>4.20</td>
+							    	<td class="last">7.74</td>
+							  	</tr>
+							  	<tr>
+							    	<td class="options">one</td>
+							    	<td class="options last">two</td>
+							  	</tr>
+							</table>
+						</div>
+
+						<div class="menulist">
+							<p class="topping">Fish</p> 
+							<table>
+								<tr>
+							    	<td>4.42</td>
+							    	<td class="last">7.92</td>
+							  	</tr>
+							  	<tr>
+							    	<td class="options">one</td>
+							    	<td class="options last">two</td>
+							  	</tr>
+							</table>
+						</div>
+					</div>
+
+					<div class="nachosFriesD" style="">
+						<h3 class="headingUnderline">Nachoes and Fries</h3>
+						<p>Available Large Nachos toppings: Shredded or melted cheese, tomatoes, black beans, onions, jalapeños, cilantro, sour cream, guacamole or salsa.</p>
+
+						<div class="menulist">
+							<p class="topping">Large Nachoes</p> 
+							<table>
+								<tr>
+									<td>6.19</td>
+							    	<td class="last">9.07</td>
+							  	</tr>
+							  	<tr>
+							    	<td class="options">regular</td>
+							    	<td class="options last">w/ meat</td>
+							  	</tr>
+							</table>
+						</div>
+
+						<div class="menulist">
+							<p class="topping">Chips & Salsa</p> 
+							<table>
+								<tr>
+							    	<td class="last">2.99</td>
+							  	</tr>
+							</table>
+						</div>
+
+						<div class="menulist">
+							<p class="topping">Chips & Guacamole</p> 
+							<table>
+								<tr>
+							    	<td class="last">3.54</td>
+							  	</tr>
+							</table>
+						</div>
+
+						<div class="menulist">
+							<p class="topping">Chips & Cheese</p> 
+							<table>
+								<tr>
+							    	<td class="last">3.54</td>
+							  	</tr>
+							</table>
+						</div>
+
+						<div class="menulist">
+							<p class="topping">Fries</p> 
+							<table>
+								<tr>
+							    	<td class="last">2.52</td>
+							  	</tr>
+							</table>
+						</div>
+
+						<div class="menulist">
+							<p class="topping">Supreme Fries</p> 
+							<table>
+								<tr>
+									<td>6.19</td>
+							    	<td class="last">9.07</td>
+							  	</tr>
+							  	<tr>
+							    	<td class="options">regular</td>
+							    	<td class="options last">w/ meat</td>
+							  	</tr>
+							</table>
+						</div>
+
+						<div class="menulist">
+							<p class="topping">Fish & Chips</p> 
+							<table>
+								<tr>
+							    	<td class="last">9.51</td>
+							  	</tr>
+							</table>
+						</div>
+					</div>
+
+					<div class="extraSidesD" style="">
+						<h3 class="headingUnderline">Extras and Sides</h3>
+
+						<div class="menulist">
+							<p class="topping">Guacamole</p> 
+							<table>
+								<tr>
+							    	<td class="last">0.99</td>
+							  	</tr>
+							</table>
+						</div>
+
+						<div class="menulist">
+							<p class="topping">Cheese</p> 
+							<table>
+								<tr>
+							    	<td class="last">0.99</td>
+							  	</tr>
+							</table>
+						</div>
+
+						<div class="menulist">
+							<p class="topping">Sauce</p> 
+							<table>
+								<tr>
+							    	<td class="last">0.60</td>
+							  	</tr>
+							</table>
+						</div>
+
+						<div class="menulist">
+							<p class="topping">Toppings</p> 
+							<table>
+								<tr>
+							    	<td class="last">0.60</td>
+							  	</tr>
+							</table>
+						</div>
+
+						<div class="menulist">
+							<p class="topping">Side of rice</p> 
+							<table>
+								<tr>
+							    	<td class="last">2.30</td>
+							  	</tr>
+							</table>
+						</div>
+
+						<div class="menulist">
+							<p class="topping">Meat</p> 
+							<table>
+								<tr>
+							    	<td>2.30</td>
+							    	<td class="last">2.90</td>
+							  	</tr>
+							  	<tr>
+							    	<td class="options">small</td>
+							    	<td class="options last">large</td>
+							  	</tr>
+							</table>
+						</div>
+
+						<div class="menulist">
+							<p class="topping">Seafood</p> 
+							<table>
+								<tr>
+							    	<td>2.59</td>
+							    	<td class="last">3.20</td>
+							  	</tr>
+							  	<tr>
+							    	<td class="options">small</td>
+							    	<td class="options last">large</td>
+							  	</tr>
+							</table>
+						</div>
+					</div>
+
+
+				</div>
+
+				<div class="list-group menu" style="display: none">
+				<button type="button" id="burritos" class="list-group-item mobileBtn">Burritos</button>
+				<div class="burritos" style="display: none">
+					<p>Order any burrito on a regular or whole wheat tortilla, or Naked (bowl). Make your burrito a meal by adding fries or tortilla chips and a pop for only $2.99. <br><a href="#" onclick="return false;" data-tooltip="Refried beans, rice, cheese, lettuce, tomatoes, red & green peppers, jalapeños, corn, black beans, red onions, cilantro, fresh guacamole, salsa, sour cream, homemade burrito sauce and hot sauce." data-placement="bottom">Available toppings</a></p>
+
+					<div class="menulist">
+						<p class="topping">Steak</p> 
+						<table>
+							<tr>
+						    	<td>7.52</td>
+						    	<td class="last">8.72</td>
+						  	</tr>
+						  	<tr>
+						    	<td class="options">small</td>
+						    	<td class="options last">large</td>
+						  	</tr>
+						</table>
+					</div>
+
+					<div class="menulist">
+						<p class="topping">Chicken</p>
+						<table>
+							<tr>
+						    	<td>6.86</td>
+						    	<td class="last">8.19</td>
+						  	</tr>
+						  	<tr>
+						    	<td class="options">small</td>
+						    	<td class="options last">large</td>
+						  	</tr>
+						</table>
+					</div>
+
+					<div class="menulist">
+						<p class="topping">Veggie Soy</p>
+						<table>
+							<tr>
+						    	<td>6.64</td>
+						    	<td class="last">7.97</td>
+						  	</tr>
+						  	<tr>
+						    	<td class="options">small</td>
+						    	<td class="options last">large</td>
+						  	</tr>
+						</table>
+					</div>
+
+					<div class="menulist">
+						<p class="topping">Shrimp</p>
+						<table>
+							<tr>
+						    	<td>6.64</td>
+						    	<td class="last">7.97</td>
+						  	</tr>
+						  	<tr>
+						    	<td class="options">small</td>
+						    	<td class="options last">large</td>
+						  	</tr>
+						</table>
+					</div>
+
+					<div class="menulist">
+						<p class="topping">Halibut</p>
+						<table>
+							<tr>
+						    	<td>6.64</td>
+						    	<td class="last">7.97</td>
+						  	</tr>
+						  	<tr>
+						    	<td class="options">small</td>
+						    	<td class="options last">large</td>
+						  	</tr>
+						</table>
+					</div>
+
+					<div class="menulist">
+						<p class="topping">Steak & Chicken</p>
+						<table>
+							<tr>
+						    	<td>7.52</td>
+						    	<td class="last">8.72</td>
+						  	</tr>
+						  	<tr>
+						    	<td class="options">small</td>
+						    	<td class="options last">large</td>
+						  	</tr>
+						</table>
+					</div>
+
+					<div class="menulist">
+						<p class="topping">Shrimp Mix</p>
+						<table>
+							<tr>
+						    	<td>8.19</td>
+						    	<td class="last">9.07</td>
+						  	</tr>
+						  	<tr>
+						    	<td class="options">small</td>
+						    	<td class="options last">large</td>
+						  	</tr>
+						</table>
+					</div>
+
+					<div class="menulist">
+						<p class="topping">Halibut Mix</p>
+						<table>
+							<tr>
+						    	<td>9.73</td>
+						    	<td class="last">10.61</td>
+						  	</tr>
+						  	<tr>
+						    	<td class="options">small</td>
+						    	<td class="options last">large</td>
+						  	</tr>
+						</table>
+					</div>
+				</div>
+				<button type="button" id="quesadillas" class="list-group-item mobileBtn">Quesadillas</button>
+				<div class="quesadillas" style="display: none">
+					<p>Served with burrito sauce and salsa.<br><a href="#" onclick="return false;" data-tooltip="Cheese, tomatoes, red & green peppers, jalapeños, corn, black beans, red onion and cilantro." data-placement="bottom">Available toppings</a></p>
+
+					<div class="menulist">
+						<p class="topping">Steak</p>
+						<table>
+							<tr>
+						    	<td class="last">8.19</td>
+						  	</tr>
+						</table>
+					</div>
+
+					<div class="menulist">
+						<p class="topping">Chicken</p> 
+						<table>
+							<tr>
+						    	<td class="last">7.52</td>
+						  	</tr>
+						</table>
+					</div>
+
+					<div class="menulist">
+						<p class="topping">Steak & Chicken</p>
+						<table>
+							<tr>
+						    	<td class="last">8.19</td>
+						  	</tr>
+						</table>
+					</div>
+
+					<div class="menulist">
+						<p class="topping">Veggie Soy</p> 
+						<table>
+							<tr>
+						    	<td class="last">7.30</td>
+						  	</tr>
+						</table>
+					</div>
+
+					<div class="menulist">
+						<p class="topping">Cheese</p> 
+						<table>
+							<tr>
+						    	<td class="last">5.97</td>
+						  	</tr>
+						</table>
+					</div>
+
+					<div class="menulist">
+						<p class="topping">Shrimp</p> 
+						<table>
+							<tr>
+						    	<td class="last">8.63</td>
+						  	</tr>
+						</table>
+					</div>
+
+					<div class="menulist">
+						<p class="topping">Shrimp Mix</p> 
+						<table>
+							<tr>
+						    	<td class="last">8.63</td>
+						  	</tr>
+						</table>
+					</div>
+				</div>
+				<button type="button" id="tacos" class="list-group-item mobileBtn">Tacos</button>
+				<div class="tacos" style="display: none">
+					<p>Choose from hard, soft or GLUTEN-FREE hard taco shells.<br><a href="#" onclick="return false;" data-tooltip="Lettuce, cheese, tomato, red onions, jalapeño, cilantro, salsa, sour cream, homemade hot sauce. Add guacamole for $0.99" data-placement="bottom">Available toppings</a></p>
+
+					<div class="menulist">
+						<p class="topping">Steak</p> 
+
+						<table>
+							<tr>
+						    	<td>3.76</td>
+						    	<td class="last">6.69</td>
+						  	</tr>
+						  	<tr>
+						    	<td class="options">one</td>
+						    	<td class="options last">two</td>
+						  	</tr>
+						</table>
+					</div>
+
+					<div class="menulist">
+						<p class="topping">Chicken</p> 
+						<table>
+							<tr>
+						    	<td>3.76</td>
+						    	<td class="last">6.42</td>
+						  	</tr>
+						  	<tr>
+						    	<td class="options">one</td>
+						    	<td class="options last">two</td>
+						  	</tr>
+						</table>
+					</div>
+
+					<div class="menulist">
+						<p class="topping">Veggie Soy</p> 
+						<table>
+							<tr>
+						    	<td>3.76</td>
+						    	<td class="last">6.42</td>
+						  	</tr>
+						  	<tr>
+						    	<td class="options">one</td>
+						    	<td class="options last">two</td>
+						  	</tr>
+						</table>
+					</div>
+
+					<div class="menulist">
+						<p class="topping">Bean & Cheese</p> 
+						<table>
+							<tr>
+						    	<td>2.74</td>
+						    	<td class="last">5.22</td>
+						  	</tr>
+						  	<tr>
+						    	<td class="options">one</td>
+						    	<td class="options last">two</td>
+						  	</tr>
+						</table>
+					</div>
+
+					<div class="menulist">
+						<p class="topping">Shrimp</p> 
+						<table>
+							<tr>
+						    	<td>4.20</td>
+						    	<td class="last">7.74</td>
+						  	</tr>
+						  	<tr>
+						    	<td class="options">one</td>
+						    	<td class="options last">two</td>
+						  	</tr>
+						</table>
+					</div>
+
+					<div class="menulist">
+						<p class="topping">Fish</p> 
+						<table>
+							<tr>
+						    	<td>4.42</td>
+						    	<td class="last">7.92</td>
+						  	</tr>
+						  	<tr>
+						    	<td class="options">one</td>
+						    	<td class="options last">two</td>
+						  	</tr>
+						</table>
+					</div>
+				</div>
+				<button type="button" id="nachosFries" class="list-group-item mobileBtn">Nachos and Fries</button>
+				<div class="nachosFries" style="display: none">
+					<p><a href="#" onclick="return false;" data-tooltip="Shredded or melted cheese, tomatoes, black beans, onions, jalapeños, cilantro, sour cream, guacamole or salsa." data-placement="bottom">Available Large Nachos toppings</a></p>
+
+					<div class="menulist">
+						<p class="topping">Large Nachoes</p> 
+						<table>
+							<tr>
+								<td>6.19</td>
+						    	<td class="last">9.07</td>
+						  	</tr>
+						  	<tr>
+						    	<td class="options">regular</td>
+						    	<td class="options last">w/ meat</td>
+						  	</tr>
+						</table>
+					</div>
+
+					<div class="menulist">
+						<p class="topping">Chips & Salsa</p> 
+						<table>
+							<tr>
+						    	<td class="last">2.99</td>
+						  	</tr>
+						</table>
+					</div>
+
+					<div class="menulist">
+						<p class="topping">Chips & Guacamole</p> 
+						<table>
+							<tr>
+						    	<td class="last">3.54</td>
+						  	</tr>
+						</table>
+					</div>
+
+					<div class="menulist">
+						<p class="topping">Chips & Cheese</p> 
+						<table>
+							<tr>
+						    	<td class="last">3.54</td>
+						  	</tr>
+						</table>
+					</div>
+
+					<div class="menulist">
+						<p class="topping">Fries</p> 
+						<table>
+							<tr>
+						    	<td class="last">2.52</td>
+						  	</tr>
+						</table>
+					</div>
+
+					<div class="menulist">
+						<p class="topping">Supreme Fries</p> 
+						<table>
+							<tr>
+								<td>6.19</td>
+						    	<td class="last">9.07</td>
+						  	</tr>
+						  	<tr>
+						    	<td class="options">regular</td>
+						    	<td class="options last">w/ meat</td>
+						  	</tr>
+						</table>
+					</div>
+
+					<div class="menulist">
+						<p class="topping">Fish & Chips</p> 
+						<table>
+							<tr>
+						    	<td class="last">9.51</td>
+						  	</tr>
+						</table>
+					</div>
+				</div>
+				<button type="button" id="extrasSides" class="list-group-item mobileBtn">Extras and Sides</button>
+				<div class="extrasSides" style="display: none">
+					<div class="menulist">
+							<p class="topping">Guacamole</p> 
+							<table>
+								<tr>
+							    	<td class="last">0.99</td>
+							  	</tr>
+							</table>
+					</div>
+
+					<div class="menulist">
+						<p class="topping">Cheese</p> 
+						<table>
+							<tr>
+						    	<td class="last">0.99</td>
+						  	</tr>
+						</table>
+					</div>
+
+					<div class="menulist">
+						<p class="topping">Sauce</p> 
+						<table>
+							<tr>
+						    	<td class="last">0.60</td>
+						  	</tr>
+						</table>
+					</div>
+
+					<div class="menulist">
+						<p class="topping">Toppings</p> 
+						<table>
+							<tr>
+						    	<td class="last">0.60</td>
+						  	</tr>
+						</table>
+					</div>
+
+					<div class="menulist">
+						<p class="topping">Side of rice</p> 
+						<table>
+							<tr>
+						    	<td class="last">2.30</td>
+						  	</tr>
+						</table>
+					</div>
+
+					<div class="menulist">
+						<p class="topping">Meat</p> 
+						<table>
+							<tr>
+						    	<td>2.30</td>
+						    	<td class="last">2.90</td>
+						  	</tr>
+						  	<tr>
+						    	<td class="options">small</td>
+						    	<td class="options last">large</td>
+						  	</tr>
+						</table>
+					</div>
+
+					<div class="menulist">
+						<p class="topping">Seafood</p> 
+						<table>
+							<tr>
+						    	<td>2.59</td>
+						    	<td class="last">3.20</td>
+						  	</tr>
+						  	<tr>
+						    	<td class="options">small</td>
+						    	<td class="options last">large</td>
+						  	</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12">
+				<button id="about" class="btn less center-block mobileBtn">About Us</button>
+				<div class="about list-group content-text" style="display: none">
+					We use only the freshest ingredients to marinate our meat, giving it an unprecedented taste and flavour. These tastes, blended with fresh cut vegetables, sour cream, homemade guacamole, burrito sauce and hot sauce will always leave you wanting more. Burrito Masters receives daily deliveries of fresh meat and produce, meaning our staff will always serve you  the best, freshest Mexican burritos.
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12">
+				<button id="orderOnline" class="btn less center-block mobileBtn">Order Online</button>
+				<div class="orderOnline text-center" style="display: none">
+					<span class="glf-button" data-glf-cuid="beb33307-7fb8-46aa-a1dd-1ea4c22075fb" data-glf-ruid="24601d40-8d6d-4fdf-9135-b1ebab2d041f" data-glf-auto-open="false"> Order Now!</span> 
+				</div>
+			</div>
+		</div>
+
+		<div class="row last">
+			<div class="col-xs-12">
+				<button id="franchising" class="btn less center-block mobileBtn">Franchising</button>
+				<div class="franchising list-group content-text" style="display: none">
+					<p>Are you looking for entrepreneurial and rising business opportunity? Are you passionate about food and want to make a career? Burrito Masters is looking for the right people to join OUR team! Please contact our Franchise Department at <a href="mailto:franchise@burritomasters.ca?subject=Franchise%20inquiry">franchise@burritomasters.ca</a></p>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+	<footer class="footer">
+      <div class="container">
+        <p class="foot text-center">Burrito Masters - 2016 <a class="fa"><i class="fa fa-facebook-square"></i></a></p>
+        <span class="phone right"><i class="fa fa-phone"></i>(289) 725-9000 - Oakville</span>
+        <span class="phone left"><i class="fa fa-phone"></i>(289) 245-1010 - Burlington</span>
+      </div>
+    </footer>
+
+<script>
+$("document").ready(function(){$(".mobileBtn").click(function(){var i="."+this.id;console.log(i),$(i).is(":hidden")?$(i).slideDown():$(i).slideUp()}),$(window).width()<700?($(".owl-carousel").append('<div class="item"><img src="images/one1.jpg"></div>'),$(".owl-carousel").append('<div class="item"><img src="images/two1.jpg"></div>'),$(".owl-carousel").append('<div class="item"><img src="images/three1.jpg"></div>')):($(".owl-carousel").append('<div class="item"><img src="images/onehalf.jpg"></div>'),$(".owl-carousel").append('<div class="item"><img src="images/twohalf.jpg"></div>'),$(".owl-carousel").append('<div class="item"><img src="images/threehalf.jpg"></div>')),$(".owl-carousel").owlCarousel({navigation:!1,slideSpeed:300,paginationSpeed:400,singleItem:!0,autoPlay:!0})});
+</script>
+
+</body>
