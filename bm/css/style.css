@@ -618,6 +618,12 @@ span.orderbutton {
   }
 }
 
+@media (max-width: 860px) {
+  .storeHours {
+    width: 240px;
+  }
+}
+
 @media (max-width: 650px) {
   .storeHoursList {
     padding: 10px;
@@ -627,6 +633,7 @@ span.orderbutton {
 .storeHoursList {
   list-style: none;
   text-align: left;
+  padding: 0;
 }
 
 .openingHours {
