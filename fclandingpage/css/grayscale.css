@@ -52,7 +52,7 @@ p {
 }
 
 a {
-    color: #42dca3;
+    color: #ef5223;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -60,25 +60,25 @@ a {
 
 hr.hrOrange {
     max-width: 50px;
-    border-color: #f05f40;
+    border-color: #ef5223;
     border-width: 3px;
     margin-bottom: 50px;
 }
 
 hr.hrPurple {
     max-width: 50px;
-    border-color: purple;
+    border-color: #3333ff;
     border-width: 3px;
     margin-bottom: 50px;
 }
 
 
 .orange {
-    color: #f05f40;
+    color: #ef5223;
 }
 
 .purple {
-    color: purple;
+    color: #3333ff;
 }
 
 a:hover,
@@ -178,7 +178,7 @@ a:focus {
     text-align: center;
     color: #fff;
     /*background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;*/
-    background: url(../img/food-image-gradient-comp-low.jpg) no-repeat bottom center scroll;
+    background: url(../img/food-image-gradient-comp-dark.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -293,7 +293,7 @@ p.intro-text {
 }
 
 .content-section {
-    padding-top: 150px;
+    padding-top: 100px;
 }
 
 .download-section {
@@ -349,7 +349,7 @@ p.intro-text {
 .btn-default:focus {
     border: 1px solid #f05f40;
     outline: 0;
-    color: purple;
+    color: #3333ff;
     background-color: #f05f40;
 }
 
@@ -435,14 +435,14 @@ body {
     text-align: center;
     color: #fff;
     opacity: 0;
-    background: rgba(240,95,64,.9);
+    background: rgba(239,82,35,.9);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
 }
 
 .portfolio-box .purple-box {
-    background: rgba(102, 0, 204,.9);
+    background: rgba(51, 51, 255,.9);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
