@@ -86,7 +86,7 @@ $( "document").ready(function () {
 			  		var streetViewSize = width + "x" + length;
 			  		var streetViewKey = "AIzaSyCMXA5D6seEv12ZjkDT-IfpTAbn_jnEK2g";
 			  		var streetViewLocation = myLat + "," + myLng;
-			  		var streetViewUrl = "https://maps.googleapis.com/maps/api/streetview?size=" + streetViewSize + "&location=" + appLocation +"&key=" + streetViewKey + "&heading=" + getAngle();
+			  		var streetViewUrl = "https://maps.googleapis.com/maps/api/streetview?size=" + streetViewSize + "&location=" + streetViewLocation +"&key=" + streetViewKey + "&heading=" + getAngle();
 			  		console.log(streetViewUrl);
 			  		console.log("Angle is " + getAngle());
 
