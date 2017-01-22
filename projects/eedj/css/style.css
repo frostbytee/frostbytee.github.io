@@ -1,0 +1,163 @@
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media(min-width: 764px) {
+  body {
+    width: 764px;
+    margin: 0 auto;
+  }
+
+  .container {
+    width: 750px;
+  }
+}
+
+nav {
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: #333333;
+    color: white;
+    font-size: 15px;
+}
+
+.dj-navbar-nav {
+  margin: 7.5px -15px;
+}
+
+.dj-navbar {
+    margin-bottom: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+@media (min-width: 764px) {
+  .dj-navbar {
+    width: 750px;
+    margin: 0 auto;
+  }
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.icons {
+    font-size: 175%;
+    margin-top: 50px;
+}
+.nav>li {
+    padding: 0 5px;
+}
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.headline {
+   color: white; 
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.6);
+   width: 98%;
+   padding-left: 20px;
+}
+
+.about {
+    height: 150px;
+    width: 100%;
+    background: url(../images/about.jpg);
+    background-size: cover;
+}
+
+.weddings {
+    height: 150px;
+    width: 100%;
+    background: url(../images/weddings.jpg);
+    background-size: cover;
+}
+.parties {
+    height: 150px;
+    width: 100%;
+    background: url(../images/parties.jpg);
+    background-size: cover;
+}
+.testimonials {
+    height: 150px;
+    width: 100%;
+    background: url(../images/testimonials.jpg);
+    background-size: cover;
+}
+.contact {
+    height: 150px;
+    width: 100%;
+    background: url(../images/contact.jpg);
+    background-size: cover;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.header {
+    background-color: #333333;
+    height: 120px; 
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 50px;
+  background-color: #333333;
+}
+
+.call {
+    position: relative;
+    top: 15%;
+    left: 10%;
+    background: url(../images/call.png);
+    width: 80%;
+}
+
+.logo {
+    margin-top: 10px;
+}
+
+.img-responsive {
+    margin: 0 auto;
+}
+
+.image {
+    position: relative;
+}
+
+.row, .col-xs-12, .col-sm-6 {
+    margin-bottom: 3px;
+}
+
+
+h2 { 
+   position: absolute; 
+   top: 80px;
+   font-family: 'Open Sans Condensed', sans-serif;
+   font-style: italic;
+   font-size: 40px;
+}
+
+@media (min-width: 450px) {
+  .footer {
+    display: none;
+  }

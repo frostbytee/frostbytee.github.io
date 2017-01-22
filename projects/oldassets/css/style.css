@@ -1,0 +1,82 @@
+/*
+* {
+	border: 1px solid red !important;
+}
+*/
+
+@import url(http://weloveiconfonts.com/api/?family=brandico);
+
+/* brandico */
+[class*="brandico-"]:before {
+	font-family: 'brandico', sans-serif;
+	font-size: 200%;
+}
+
+* {
+    font-family: 'Playfair Display SC', serif;
+}
+
+body {
+	background-color: #009688;
+}
+
+hr {
+	border: 1px solid #bdbdbd;
+}
+
+img {
+	border-radius: 10px;
+}
+
+a {
+	color: #1abc9c;
+	font-weight: 600;
+}
+
+h4 {
+	color: #1abc9c;
+	font-weight: 600;
+}
+
+dt {
+	color: #1abc9c;
+}
+
+.logo {
+	max-width: 20%;
+}
+
+
+.top {
+	background-color: #e0f2f1;
+}
+
+.green {
+	color: #1abc9c;
+	font-weight: 600;
+}
+
+.icons {
+	padding-bottom: 10px;
+}
+
+/* media queries for better font in small screens */
+@media (max-width: 450px) {
+	h1 {
+		font-size: 120%;
+		font-weight: 600;
+	}
+
+	h2 {
+		font-size: 120%;
+		font-weight: 600;
+	}
+
+	h3 {
+		font-size: 110%;
+	}
+
+	.logo {
+		max-width: 40%;
+	}
+}

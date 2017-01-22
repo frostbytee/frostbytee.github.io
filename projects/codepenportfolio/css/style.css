@@ -1,0 +1,107 @@
+html, body {
+  overflow-x: hidden; 
+} 
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-weight: 800;
+  /*font-size: 450%;*/
+}
+
+h2 {
+  font-weight: 800;
+}
+
+h4 {
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 125%;
+}
+
+hr {
+  border: 1px solid;
+}
+
+dl {
+  font-size: 125%;
+}
+
+.headline {
+  padding: 160px 15px 80px 15px;
+  color: #b3b3cc;
+  /*-webkit-text-stroke: 1px #000; */
+}
+
+.about {
+  padding: 50px 15px 50px 15px;
+}
+
+.portfolio {
+  padding: 50px 15px 50px 15px;
+  color: white;
+}
+
+.contact {
+  padding-top: 50px;
+  background-color: #f2f2f2;
+}
+
+.btn {
+  margin: 2px
+}
+
+.fixed-bg {
+  min-height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.bg2 {
+  background-image: url("http://cruzken.github.io/images/codepenportfolio/bg2.jpg");
+}
+
+.bg3 {
+  background-image: url("http://cruzken.github.io/images/codepenportfolio/bg1.jpg");
+}
+
+.title {
+  background-color: rgba(0, 0, 0, 0.50);
+  border-radius: 0px;
+  margin-bottom: 10px;
+}
+
+.project {
+  background-color: rgba(0, 0, 0, 0.50);
+  padding-bottom: 10px;
+}
+
+.profilepic {
+  margin-top: 50px;
+  border-radius: 50%;
+  border: 5px solid
+}
+
+.grey {
+  background-color: #f2f2f2;
+  color: #595959;
+}
+/*
+@media (max-width: 650px) {
+  h1 {
+    font-size: 300%;
+  }
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 200%;
+  }
+}
+*/
