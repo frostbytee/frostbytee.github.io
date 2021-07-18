@@ -4,11 +4,22 @@ $("document").ready(function () {
   var myLng = null;
   var myLocation = null;
 
-  var locationURL = "https://ipinfo.io/json";
-  $.getJSON(locationURL, function (data) {
-    myLocation = data.loc.split(",");
-    myLat = myLocation[0].slice(0, 7);
-    myLng = myLocation[1].slice(0, 7);
+  var options = {
+    enableHighAccuracy: true,
+    timeout: 5000,
+    maximumAge: 0,
+  };
+
+  function success(pos) {
+    var crd = pos.coords;
+
+    console.log("Your current position is:");
+    console.log(`Latitude : ${crd.latitude}`);
+    console.log(`Longitude: ${crd.longitude}`);
+    console.log(`More or less ${crd.accuracy} meters.`);
+
+    myLat = crd.latitude.toFixed(5);
+    myLng = crd.longitude.toFixed(5);
 
     console.log(myLat);
     console.log(myLng);
@@ -193,6 +204,12 @@ $("document").ready(function () {
         year: date.getFullYear(),
       };
     }
-  });
+  }
+
+  function error(err) {
+    console.warn(`ERROR(${err.code}): ${err.message}`);
+  }
+
+  navigator.geolocation.getCurrentPosition(success, error, options);
 });
 
