@@ -1,60 +1,57 @@
 <!DOCTYPE html>
-<html >
+<html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Pomodoro Clock</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link href='https://fonts.googleapis.com/css?family=Orbitron:700' rel='stylesheet' type='text/css'>
-    
-    
-    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Orbitron:700"
+      rel="stylesheet"
+      type="text/css"
+    />
 
-        <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet prefetch" href="css/bootstrap.min.css" />
 
-    
-    
-    
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-
     <div id="bg" class="container text-center">
-  <div class="row">
-    <div class="col-xs-12">
-      <h2 class="">Pomodoro Timer</h2>
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="">Pomodoro Timer</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 circle">
+          <div class="state">Work</div>
+          <div class="time" id="demo">25:00</div>
+          <div class="icon" id="icon"><i class="fa fa-play"></i></div>
+        </div>
+      </div>
+      <div class="row options">
+        <div class="col-xs-6">
+          <p><i class="fa fa-wrench"></i></p>
+          <span id="lowerTimer"><i class="fa fa-chevron-left"></i></span>
+          <span id="myNumber">25</span>
+          <span id="higherTimer"><i class="fa fa-chevron-right"></i></span>
+        </div>
+        <div class="col-xs-6">
+          <p><i class="fa fa-gamepad"></i></p>
+          <span id="lowerBreak"><i class="fa fa-chevron-left"></i></span>
+          <span id="myBreak">10</span>
+          <span id="higherBreak"><i class="fa fa-chevron-right"></i></span>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-12 circle">
-      <div class="state">Work</div>
-      <div class="time" id="demo">25:00</div>
-      <div class="icon" id="icon"><i class="fa fa-play"></i></div>
-    </div>
-  </div>
-  <div class="row options">
-    <div class="col-xs-6">
-      <p><i class="fa fa-wrench"></i></p>
-      <span id="lowerTimer"><i class="fa fa-chevron-left"></i></span>
-      <span id="myNumber">25</span>
-      <span id="higherTimer"><i class="fa fa-chevron-right"></i></span>
-    </div>
-    <div class="col-xs-6">
-      <p><i class="fa fa-gamepad"></i></p>
-      <span id="lowerBreak"><i class="fa fa-chevron-left"></i></span>
-      <span id="myBreak">10</span>
-      <span id="higherBreak"><i class="fa fa-chevron-right"></i></span>
-    </div>
-  </div>
-</div>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
-<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
-        <script src="js/index.js"></script>
-
-    
-    
-    
+    <script src="js/index.js"></script>
   </body>
 </html>
