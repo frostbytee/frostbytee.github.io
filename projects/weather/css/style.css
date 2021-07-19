@@ -31,7 +31,7 @@
 }
 
 h5 {
-	text-shadow: 0.1em 0.1em black;
+	text-shadow: 0em 0em 3px black;
 	font-size: 1.15em;
 }
 
@@ -66,4 +66,12 @@ li.day {
 	li.day {
 		text-align: center;
 	}
+h5 {
+	text-shadow: 0em 0em 7px black;
+	font-size: 2.15em;
+}
+.container {
+  margin-top: 5em;
+  max-width: 800px;
+}
 }
