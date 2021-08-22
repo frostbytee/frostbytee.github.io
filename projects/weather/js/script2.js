@@ -24,21 +24,8 @@ $("document").ready(function () {
     console.log(myLat);
     console.log(myLng);
 
-    var appID = "057a39b3e401d09f277fa880c5a192a5";
     var weatherAPI =
-      "https://api.openweathermap.org/data/2.5/weather?lat=" +
-      myLat +
-      "&lon=" +
-      myLng +
-      "&appid=" +
-      appID;
-    var forecastAPI =
-      "https://api.openweathermap.org/data/2.5/forecast/daily?lat=" +
-      myLat +
-      "&lon=" +
-      myLng +
-      "&cnt=7&appid=" +
-      appID;
+      "https://weather.kencruz.ca/weather?lat=" + myLat + "&lon=" + myLng;
 
     console.log(weatherAPI);
 
@@ -56,19 +43,19 @@ $("document").ready(function () {
 
     // If I alert myLocation here, the coordinates are there.
     $.getJSON(weatherAPI, function (data) {
-      var wat = JSON.parse(JSON.stringify(data));
+      var { weather, forecast } = JSON.parse(JSON.stringify(data));
       var icon =
-        "https://openweathermap.org/img/w/" + wat.weather[0].icon + ".png";
-      var temp = wat.main.temp;
+        "https://openweathermap.org/img/w/" + weather.weather[0].icon + ".png";
+      var temp = weather.main.temp;
       var tempC = convertTemp(temp, "C");
       var tempF = convertTemp(temp, "F");
-      var appLocation = wat.name;
-      var appCountry = wat.sys.country;
-      var weatherDescription = wat.weather[0].description;
-      console.log(wat);
+      var appLocation = weather.name;
+      var appCountry = weather.sys.country;
+      var weatherDescription = weather.weather[0].description;
+      console.log(weather);
       console.log(appLocation);
       console.log(
-        "Wind: " + wat.wind.speed + " knots " + getCompass(wat.wind.deg)
+        "Wind: " + weather.wind.speed + " knots " + getCompass(weather.wind.deg)
       );
 
       function getCompass(deg) {
@@ -86,9 +73,9 @@ $("document").ready(function () {
         return direction;
       }
 
-      function getAngle() {
-        return Math.floor(Math.random() * 8) * 45;
-      }
+      var streetViewUrl =
+        "https://weather.kencruz.ca/streetview?lat=" + myLat + "&lon=" + myLng;
+      console.log(streetViewUrl);
 
       var width;
       if ($(window).width() > 640) {
@@ -97,22 +84,6 @@ $("document").ready(function () {
         width = $(window).width();
       }
       var length = Math.floor(width / 2);
-      var streetViewSize = width + "x" + length;
-      var streetViewKey = "AIzaSyCMXA5D6seEv12ZjkDT-IfpTAbn_jnEK2g";
-      var streetViewLocation = myLat + "," + myLng;
-      var streetViewUrl =
-        "https://maps.googleapis.com/maps/api/streetview?size=" +
-        streetViewSize +
-        "&location=" +
-        streetViewLocation +
-        "&key=" +
-        streetViewKey +
-        "&heading=" +
-        getAngle() +
-        "&pitch=-1.5";
-      console.log(streetViewUrl);
-      console.log("Angle is " + getAngle());
-
       //$('.app').append('<img class="img-responsive" src="' + streetViewUrl + '">');
       //$('.main').css('padding-top', '' + (length/3) + 'px');
       $(".app").css("background-image", 'url("' + streetViewUrl + '")');
@@ -130,10 +101,7 @@ $("document").ready(function () {
       $(".temp").html(
         "<h5>Temperature:</h5>" + "<h5>" + tempC + "&deg C" + "</h5>"
       );
-    });
 
-    $.getJSON(forecastAPI, function (data) {
-      var forecast = JSON.parse(JSON.stringify(data));
       console.log(forecast);
 
       for (var i = 1; i < forecast.list.length; i++) {
@@ -212,4 +180,3 @@ $("document").ready(function () {
 
   navigator.geolocation.getCurrentPosition(success, error, options);
 });
-
