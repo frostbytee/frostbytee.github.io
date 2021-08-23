@@ -9,7 +9,7 @@
 
 .col-xs-4 {
   height: 100%;
-  padding-top: 2em;
+  padding-top: 3em;
 }
 
 * {
@@ -35,6 +35,10 @@
 
 .icon {
   left: 33%;
+}
+
+.wi {
+  font-size: 5em;
 }
 
 .temp {

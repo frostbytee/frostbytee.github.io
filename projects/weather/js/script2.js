@@ -44,8 +44,7 @@ $("document").ready(function () {
     // If I alert myLocation here, the coordinates are there.
     $.getJSON(weatherAPI, function (data) {
       var { weather, forecast } = JSON.parse(JSON.stringify(data));
-      var icon =
-        "https://openweathermap.org/img/w/" + weather.weather[0].icon + ".png";
+      var icon = weather.weather[0].id;
       var temp = weather.main.temp;
       var tempC = convertTemp(temp, "C");
       var tempF = convertTemp(temp, "F");
@@ -97,9 +96,9 @@ $("document").ready(function () {
       $(".app").css("height", "" + length + "");
       $(".city").append("<h5>" + appLocation + ", " + appCountry + "</h5>");
       $(".icon").append(
-        '<img class="iconMain" src="' +
+        '<i class="wi wi-owm-' +
           icon +
-          '">' +
+          '"></i>' +
           "<br>" +
           "<h5>" +
           weatherDescription +
