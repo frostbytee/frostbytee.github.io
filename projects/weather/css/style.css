@@ -19,9 +19,26 @@
 }
 
 .app {
-  background-repeat: no-repeat;
-  background-size: cover;
   color: white;
+  position: relative;
+}
+
+.background-blur {
+  height: 100%;
+  filter: blur(1px);
+}
+
+.main {
+  position: absolute;
+  top: 0;
+}
+
+.icon {
+  left: 33%;
+}
+
+.temp {
+  right: 0;
 }
 
 .grad {

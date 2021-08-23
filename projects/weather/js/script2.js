@@ -86,14 +86,14 @@ $("document").ready(function () {
       var length = Math.floor(width / 2);
       //$('.app').append('<img class="img-responsive" src="' + streetViewUrl + '">');
       //$('.main').css('padding-top', '' + (length/3) + 'px');
-      $(".app").css(
+      $(".background-blur").css(
         "background",
         'linear-gradient(rgba(127, 199, 228, 0.3), rgba(0, 0, 0, 0.0)), url("' +
           streetViewUrl +
           '")'
       );
-      $(".app").css("background-position", "center");
-      $(".app").css("background-size", "cover");
+      $(".background-blur").css("background-position", "center");
+      $(".background-blur").css("background-size", "cover");
       $(".app").css("height", "" + length + "");
       $(".city").append("<h5>" + appLocation + ", " + appCountry + "</h5>");
       $(".icon").append(
