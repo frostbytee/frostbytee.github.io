@@ -121,25 +121,13 @@ $("document").ready(function () {
         //$(selector).append('<img src="' + icon + '">');
         //$(selector).append(convertTemp(forecast.list[i].temp.day, "C") +"C");
         $(".grad").append(
-          '<div id="' +
-            i +
-            '" class="col-sm-2">' +
-            "<ul>" +
-            '<li class="day">' +
-            theDay.day +
-            "</li>" +
-            "<li>" +
-            '<img src="' +
-            icon +
-            '">' +
-            "</li>" +
-            "<li>" +
-            convertTemp(forecast.list[i].temp.day, "C") +
-            "&deg" +
-            "C" +
-            "</li>" +
-            "<ul>" +
-            "</div>"
+          `<div id="${i}" class="col-sm-2">
+              <ul>
+                <li class="day">${theDay.day}</li>
+                <li><img src="${icon}"></li>
+                <li>${convertTemp(forecast.list[i].temp.day, "C")}&degC</li>
+              <ul>
+            </div>`
         );
       }
     });
