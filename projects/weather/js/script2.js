@@ -94,7 +94,9 @@ $("document").ready(function () {
       $(".background-blur").css("background-position", "center");
       $(".background-blur").css("background-size", "cover");
       $(".app").css("height", "" + length + "");
-      $(".city").append("<h5>" + appLocation + ", " + appCountry + "</h5>");
+      $(".city").append(
+        "<h5>Location:</h5><h5>" + appLocation + ", " + appCountry + "</h5>"
+      );
       $(".icon").append(
         '<i class="wi wi-owm-' +
           icon +
@@ -120,8 +122,11 @@ $("document").ready(function () {
         //$(selector).append('' + theDay.day);
         //$(selector).append('<img src="' + icon + '">');
         //$(selector).append(convertTemp(forecast.list[i].temp.day, "C") +"C");
-        $(selector).html(
-          "<ul>" +
+        $(".grad").append(
+          '<div id="' +
+            i +
+            '" class="col-sm-2">' +
+            "<ul>" +
             '<li class="day">' +
             theDay.day +
             "</li>" +
@@ -135,7 +140,8 @@ $("document").ready(function () {
             "&deg" +
             "C" +
             "</li>" +
-            "<ul>"
+            "<ul>" +
+            "</div>"
         );
       }
     });
