@@ -97,13 +97,7 @@ $("document").ready(function () {
         "<h5>Location:</h5><h5>" + appLocation + ", " + appCountry + "</h5>"
       );
       $(".icon").append(
-        '<i class="wi wi-owm-' +
-          icon +
-          '"></i>' +
-          "<br>" +
-          "<h5>" +
-          weatherDescription +
-          "</h5>"
+        `<i class="wi wi-owm-${icon}"></i><br><h5>${weatherDescription}</h5>`
       );
       $(".temp").html(
         "<h5>Temperature:</h5>" + "<h5>" + tempC + "&deg C" + "</h5>"
@@ -135,38 +129,20 @@ $("document").ready(function () {
     function convertDate(time) {
       var date = new Date(time * 1000);
 
-      function convertWeekDay(day) {
-        var weekDay = "";
-        switch (day) {
-          case 0:
-            weekDay = "Sunday";
-            break;
-          case 1:
-            weekDay = "Monday";
-            break;
-          case 2:
-            weekDay = "Tuesday";
-            break;
-          case 3:
-            weekDay = "Wednesday";
-            break;
-          case 4:
-            weekDay = "Thursday";
-            break;
-          case 5:
-            weekDay = "Friday";
-            break;
-          case 6:
-            weekDay = "Saturday";
-            break;
-        }
-        return weekDay;
-      }
+      let dayName = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
 
       return {
         month: date.getMonth(),
         date: date.getDate(),
-        day: convertWeekDay(date.getDay()),
+        day: dayName[date.getDay()],
         year: date.getFullYear(),
       };
     }
