@@ -2,7 +2,6 @@ $("document").ready(function () {
   // This is the location marker that we will be using on the map. Let's store a reference to it here so that it can be updated in several places.
   var myLat = null;
   var myLng = null;
-  var myLocation = null;
 
   var options = {
     enableHighAccuracy: true,
@@ -113,7 +112,6 @@ $("document").ready(function () {
       console.log(forecast);
 
       for (var i = 1; i < forecast.list.length; i++) {
-        var selector = "#" + i;
         var theDay = convertDate(forecast.list[i].dt);
         var icon =
           "https://openweathermap.org/img/w/" +
