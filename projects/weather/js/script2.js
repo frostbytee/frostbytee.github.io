@@ -82,8 +82,6 @@ $("document").ready(function () {
         width = $(window).width();
       }
       var length = Math.floor(width / 2);
-      //$('.app').append('<img class="img-responsive" src="' + streetViewUrl + '">');
-      //$('.main').css('padding-top', '' + (length/3) + 'px');
       $(".background-blur").css(
         "background",
         'linear-gradient(rgba(127, 199, 228, 0.3), rgba(0, 0, 0, 0.0)), url("' +
@@ -111,9 +109,6 @@ $("document").ready(function () {
           "https://openweathermap.org/img/w/" +
           forecast.list[i].weather[0].icon +
           ".png";
-        //$(selector).append('' + theDay.day);
-        //$(selector).append('<img src="' + icon + '">');
-        //$(selector).append(convertTemp(forecast.list[i].temp.day, "C") +"C");
         $(".grad").append(
           `<div id="${i}" class="col-sm-2">
               <ul>
