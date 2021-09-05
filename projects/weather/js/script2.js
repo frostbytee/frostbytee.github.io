@@ -150,6 +150,23 @@ $("document").ready(function () {
 
   function error(err) {
     console.warn(`ERROR(${err.code}): ${err.message}`);
+    var width;
+    if ($(window).width() > 640) {
+      width = 640;
+    } else {
+      width = $(window).width();
+    }
+    var length = Math.floor(width / 2);
+    $(".background-blur").css({
+      background:
+        "linear-gradient(rgba(127, 199, 228, 0.3), rgba(0, 0, 0, 0.0))",
+    });
+    $(".background-blur").css("background-position", "center");
+    $(".background-blur").css("background-size", "cover");
+    $(".app").css("height", "" + length + "");
+    $(".icon").append(
+      `<i class="wi wi-na error"></i><br><h5 class="error">Error: Please reload and allow device to use location data.</h5>`
+    );
   }
 
   navigator.geolocation.getCurrentPosition(success, error, options);

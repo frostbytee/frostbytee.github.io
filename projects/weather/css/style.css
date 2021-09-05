@@ -80,6 +80,14 @@ li.day {
   text-align: left;
 }
 
+i.error {
+  color: black;
+}
+h5.error {
+  text-shadow: none;
+  color: black;
+}
+
 @media (min-width: 768px) {
   ul {
     flex-direction: column;
