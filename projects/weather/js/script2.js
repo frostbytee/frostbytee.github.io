@@ -92,14 +92,12 @@ $("document").ready(function () {
       $(".background-blur").css("background-size", "cover");
       $(".app").css("height", "" + length + "");
       $(".city").append(
-        "<h5>Location:</h5><h5>" + appLocation + ", " + appCountry + "</h5>"
+        `<h5>Location:</h5><h5>${appLocation}, ${appCountry}</h5>`
       );
       $(".icon").append(
         `<i class="wi wi-owm-${icon}"></i><br><h5>${weatherDescription}</h5>`
       );
-      $(".temp").html(
-        "<h5>Temperature:</h5>" + "<h5>" + tempC + "&deg C" + "</h5>"
-      );
+      $(".temp").html(`<h5>Temperature:</h5><h5>${tempC}&deg C</h5>`);
 
       console.log(forecast);
 
