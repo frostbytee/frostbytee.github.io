@@ -55,6 +55,10 @@
   );
 }
 
+.weather-description {
+  text-transform: capitalize;
+}
+
 h5 {
   text-shadow: 0em 0em 3px black;
   font-size: 1.15em;
