@@ -92,6 +92,10 @@ h5.error {
   color: black;
 }
 
+.full-width {
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   ul {
     flex-direction: column;

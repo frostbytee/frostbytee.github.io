@@ -91,13 +91,15 @@ $("document").ready(function () {
       $(".background-blur").css("background-position", "center");
       $(".background-blur").css("background-size", "cover");
       $(".app").css("height", "" + length + "");
-      $(".city").append(
-        `<h5>Location:</h5><h5>${appLocation}, ${appCountry}</h5>`
+      $(".app").append(
+        `<div class="col-xs-4 city main"><h5>Location:</h5><h5>${appLocation}, ${appCountry}</h5></div>`
       );
-      $(".icon").append(
-        `<i class="wi wi-owm-${icon}"></i><br><h5 class="weather-description">${weatherDescription}</h5>`
+      $(".app").append(
+        `<div class="col-xs-4 icon main"><i class="wi wi-owm-${icon}"></i><br><h5 class="weather-description">${weatherDescription}</h5></div>`
       );
-      $(".temp").html(`<h5>Temperature:</h5><h5>${tempC}&deg C</h5>`);
+      $(".app").append(
+        `<div class="col-xs-4 temp main"><h5>Temperature:</h5><h5>${tempC}&deg C</h5></div>`
+      );
 
       console.log(forecast);
 
@@ -157,8 +159,8 @@ $("document").ready(function () {
     $(".background-blur").css("background-position", "center");
     $(".background-blur").css("background-size", "cover");
     $(".app").css("height", "" + length + "");
-    $(".icon").append(
-      `<i class="wi wi-na error"></i><br><h5 class="error">Error: Please reload and allow device to use location data.</h5>`
+    $(".app").append(
+      `<div class="main full-width"><i class="wi wi-na error"></i><br><h5 class="error">Error: Please reload and allow device to use location data.</h5></div>`
     );
   }
 
